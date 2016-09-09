@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = 'whisperbot.WhisperBotMain'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    compile 'com.github.austinv11:Discord4j:2.4.8'
+    compile 'org.codehaus.groovy:groovy-all:2.4.5'
+    compile 'com.google.guava:guava:19.0'
+    compile 'com.google.gdata:core:1.47.1'
+    compile 'com.google.api-client:google-api-client:1.21.0'
+    // compile 'ch.qos.logback:logback-classic:1.1.7'
+}
